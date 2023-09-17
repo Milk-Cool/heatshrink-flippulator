@@ -71,11 +71,11 @@ int run_tests(void) {
 /* main(), for a standalone command-line test runner.
  * This replaces run_tests above, and adds command line option
  * handling and exiting with a pass/fail status. */
-int main(int argc, char **argv) {
-    GREATEST_MAIN_BEGIN();      /* init & parse command-line args */
-    RUN_SUITE(suite);
-    GREATEST_MAIN_END();        /* display results */
-}
+// int main(int argc, char **argv) {
+//     GREATEST_MAIN_BEGIN();      /* init & parse command-line args */
+//     RUN_SUITE(suite);
+//     GREATEST_MAIN_END();        /* display results */
+// }
 
 #endif
 /*********************************************************************/
