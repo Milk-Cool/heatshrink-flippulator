@@ -440,7 +440,7 @@ static void proc_args(config *cfg, int argc, char **argv) {
     if (argc > 0) { cfg->out_fname = argv[0]; }
 }
 
-int main(int argc, char **argv) {
+/*int main(int argc, char **argv) {
     config cfg;
     memset(&cfg, 0, sizeof(cfg));
     proc_args(&cfg, argc, argv);
@@ -457,10 +457,9 @@ int main(int argc, char **argv) {
     if (cfg.out == NULL) { die("Failed to open output file for write"); }
 
 #if _WIN32
-    /*
-     * On Windows, stdin and stdout default to text mode. Switch them to
-     * binary mode before sending data through them.
-     */
+    //
+    // On Windows, stdin and stdout default to text mode. Switch them to
+    // binary mode before sending data through them.
     _setmode(STDOUT_FILENO, O_BINARY);
     _setmode(STDIN_FILENO, O_BINARY);
 #endif
@@ -473,3 +472,4 @@ int main(int argc, char **argv) {
         usage();
     }
 }
+*/
