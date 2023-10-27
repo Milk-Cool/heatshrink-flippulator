@@ -572,7 +572,7 @@ void greatest_post_test(const char *name, int res) {                    \
     if (GREATEST_STDOUT == stdout) fflush(stdout);                      \
 }                                                                       \
                                                                         \
-static void greatest_run_suite(greatest_suite_cb *suite_cb,             \
+void greatest_run_suite(greatest_suite_cb *suite_cb,             \
                                const char *suite_name) {                \
     if (greatest_info.suite_filter &&                                   \
         !greatest_name_match(suite_name, greatest_info.suite_filter)) { \
